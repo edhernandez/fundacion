@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import HeroSection from "./heroSection";
-import SoyEmpresa from "./soyEmpresa";
+import SoyEmpresa from "./SoyEmpresa";
 
 const Empresa = () => {
     return ( 

@@ -47,7 +47,10 @@ const ProgramDetail: React.FC<ProgramDetailProps> = ({ program }) => {
                 >
                     <Button
                         variant="contained"
-                        onClick={() => navigate("/participar-empresa")}
+                        component="a"
+                        href="https://forms.office.com/r/qYeAyV3ngP"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         endIcon={
                             <Box
                                 sx={{
@@ -75,6 +78,7 @@ const ProgramDetail: React.FC<ProgramDetailProps> = ({ program }) => {
                             justifyContent: "space-between",
                             lineHeight: '100%',
                             width: "100%",
+                            textDecoration: 'none',
                             "&:hover": {
                                 backgroundColor: 'secondary.dark',
                             },

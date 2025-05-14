@@ -6,9 +6,10 @@ interface Props {
     title: string;
     totalHorasEspecificas: number;
     totalHorasprograma: number;
+    logoImage: string;
 }
 
-const CardCourse: React.FC<Props> = ({title, totalHorasEspecificas, totalHorasprograma}) => {
+const CardCourse: React.FC<Props> = ({title, totalHorasEspecificas, totalHorasprograma, logoImage}) => {
     return (
         <Card sx={{
             bgcolor: '#F8F9FA',
@@ -24,7 +25,7 @@ const CardCourse: React.FC<Props> = ({title, totalHorasEspecificas, totalHoraspr
         }}>
             <CardContent sx={{ width: '100%', px: '32px!important' }}>
                 <Box display={'flex'} flexDirection={'column'} gap={'0.5rem'} alignItems="flex-start" width="100%">
-                    <img src="/Logo Cencabo.png" alt="Cencabo" style={{ height: 38, width: 110, marginBottom: 8 }} />
+                    <img src={logoImage} alt="Logo institución" style={{ height: 38, width: 110, marginBottom: 8 }} />
                     <Typography fontSize={'20px'} fontWeight={700} sx={{ mb: 1, color: '#222' }}>
                         {title}
                     </Typography>
@@ -49,6 +50,10 @@ const CardCourse: React.FC<Props> = ({title, totalHorasEspecificas, totalHoraspr
                 </Box>
                 <Button
                     variant="outlined"
+                    component="a"
+                    href="https://forms.office.com/r/qYeAyV3ngP"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     fullWidth
                     endIcon={<ArrowForwardIosIcon />}
                     sx={{
@@ -62,6 +67,7 @@ const CardCourse: React.FC<Props> = ({title, totalHorasEspecificas, totalHoraspr
                         borderColor: '#D20F36',
                         color: '#D20F36',
                         background: '#fff',
+                        textDecoration: 'none',
                         '&:hover': {
                             background: '#fff',
                             borderColor: '#D20F36',

@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <Box sx={{
       width: "100%",
-      height: mobileBreakpoint ? "800px" : "720px",
+      height: mobileBreakpoint ? "920px" : "720px",
       backgroundColor: '#000000'
     }}>
       <Box
@@ -48,24 +48,55 @@ const HeroSection = () => {
         <Typography variant="body1" maxWidth="720px" p={'1rem'} sx={{ color: "white", fontSize: '18px' }}>
           Creemos en el poder del aprendizaje y la tecnología para cambiar el mundo. Nuestra misión es brindar educación, herramientas digitales y apoyo social a comunidades en situación de vulnerabilidad, creando oportunidades para un mejor futuro.
         </Typography>
-        <Box display={'flex'} gap={'1rem'}>
+        <Box display={'flex'} gap={'1rem'} flexWrap={mobileBreakpoint ? 'wrap' : 'nowrap'} justifyContent="center">
           <Button
             variant="contained"
+            component="a"
+            href="https://forms.office.com/r/qYeAyV3ngP"
+            target="_blank"
+            rel="noopener noreferrer"
             sx={{
               backgroundColor: "secondary.main",
               color: "white",
               fontWeight: "bold",
               borderRadius: "20px",
               px: 3,
+              mb: mobileBreakpoint ? 1 : 0,
               lineHeight: '20px',
               gap: '8px',
-              maxWidth: '180px'
+              maxWidth: '180px',
+              textDecoration: 'none'
             }}
           >
             Quiero ser parte del programa
           </Button>
           <Button
             variant="contained"
+            component="a"
+            href="https://forms.office.com/r/nZP9CR1hkh"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{
+              backgroundColor: "secondary.main",
+              color: "white",
+              fontWeight: "bold",
+              borderRadius: "20px",
+              px: 3,
+              mb: mobileBreakpoint ? 1 : 0,
+              lineHeight: '20px',
+              gap: '8px',
+              maxWidth: '180px',
+              textDecoration: 'none'
+            }}
+          >
+            Quiero participar como empresa
+          </Button>
+          <Button
+            variant="contained"
+            component="a"
+            href="https://forms.office.com/r/jNhHzm67Sd"
+            target="_blank"
+            rel="noopener noreferrer"
             sx={{
               backgroundColor: "secondary.main",
               color: "white",
@@ -74,10 +105,11 @@ const HeroSection = () => {
               px: 3,
               lineHeight: '20px',
               gap: '8px',
-              maxWidth: '180px'
+              maxWidth: '180px',
+              textDecoration: 'none'
             }}
           >
-            Quiero participar como empresa
+            Quiero ser asociado Heinsohn
           </Button>
         </Box>
         <Box sx={{ width: '18px', height: '34.5px', py: '1rem' }}>

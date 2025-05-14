@@ -6,31 +6,37 @@ const courses = [
         title: "Técnico laboral en auxiliar de sistemas informáticos",
         totalHorasEspecificas: 456,
         totalHorasprograma: 912,
+        logoImage: "/Logo Cencabo.png"
     },
     {
         title: "Técnico laboral en auxiliar de sistemas informáticos",
         totalHorasEspecificas: 456,
         totalHorasprograma: 912,
+        logoImage: "/Logo Cencabo.png"
     },
     {
         title: "Técnico laboral en auxiliar de sistemas informáticos",
         totalHorasEspecificas: 456,
         totalHorasprograma: 912,
+        logoImage: "/Logo Cencabo.png"
     },
     {
         title: "Técnico laboral auxiliar en plataformas tecnológicas y aplicaciones",
         totalHorasEspecificas: 456,
         totalHorasprograma: 912,
+        logoImage: "/logo-i3-inflexion.png"
     },
     {
         title: "Técnico Laboral en Auxiliar Administrativo",
         totalHorasEspecificas: 456,
         totalHorasprograma: 912,
+        logoImage: "/logo-i3-inflexion.png"
     },
     {
         title: "Técnico laboral en auxiliar de sistemas informáticos",
         totalHorasEspecificas: 456,
         totalHorasprograma: 912,
+        logoImage: "/logo-i3-inflexion.png"
     },
 ];
 
@@ -44,6 +50,7 @@ const CourseSection = () => {
                             title={course.title}
                             totalHorasEspecificas={course.totalHorasEspecificas}
                             totalHorasprograma={course.totalHorasprograma}
+                            logoImage={course.logoImage}
                         />
                     </Grid>
                 ))}

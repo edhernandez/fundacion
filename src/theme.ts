@@ -40,9 +40,17 @@ const theme = createTheme({
         fontWeightLight: 300,
         fontSize: 16,
         h1: { 
-            fontSize: "60px", 
+            fontSize: {
+                xs: "38px", // Tamaño para móviles
+                sm: "50px", // Tamaño para tablets
+                md: "60px"  // Tamaño para desktop (original)
+            },
             fontWeight: 600, 
-            lineHeight: "54px", 
+            lineHeight: {
+                xs: "42px", // Ajuste de line-height para móviles
+                sm: "50px",
+                md: "54px"  // Line-height original
+            },
             letterSpacing: "0%", 
             textAlign: "center"
         },

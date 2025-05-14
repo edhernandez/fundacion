@@ -5,6 +5,7 @@ const HeroSection = () => {
 
   const theme = useTheme();
   const mobileBreakpoint = useMediaQuery(theme.breakpoints.down('md'));
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
     <Box sx={{
@@ -42,7 +43,18 @@ const HeroSection = () => {
         alignItems: 'center',
         top: '400px'
       }}>
-        <Typography variant="h1" fontWeight="bold" maxWidth="600px" sx={{ color: "white", }}>
+        <Typography 
+          variant="h1" 
+          fontWeight="bold" 
+          maxWidth="600px" 
+          sx={{ 
+            color: "white", 
+            fontSize: isMobile ? "38px" : "60px",
+            lineHeight: isMobile ? "1.2" : "1.1",
+            paddingX: isMobile ? 2 : 0,
+            marginBottom: 2
+          }}
+        >
           En Fundación Heinsohn Conecta
         </Typography>
         <Typography variant="body1" maxWidth="720px" p={'1rem'} sx={{ color: "white", fontSize: '18px' }}>

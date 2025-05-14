@@ -1,6 +1,9 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 
 const HeroSection = () => {
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+    
     return (
         <Box
             sx={{
@@ -20,7 +23,17 @@ const HeroSection = () => {
                 pb: 8
             }}
         >
-            <Typography variant="h1" fontWeight="bold" maxWidth="600px" sx={{ color: "white", }}>
+            <Typography 
+                variant="h1" 
+                fontWeight="bold" 
+                maxWidth="600px" 
+                sx={{ 
+                    color: "white",
+                    fontSize: isMobile ? "38px" : "60px",
+                    lineHeight: isMobile ? "42px" : "54px",
+                    paddingX: isMobile ? 2 : 0
+                }}
+            >
                 ¡Súmate a la transformación del talento!
             </Typography>
             <Typography variant="body1" maxWidth="820px" p={'1.5rem'} sx={{ color: "white", fontSize: '18px' }}>

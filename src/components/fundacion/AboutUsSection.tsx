@@ -33,7 +33,7 @@ const AboutUsSection = () => {
                     ¿Quiénes somos?
                 </Typography>
                 <Box display={'flex'} flexDirection={"row"} alignItems={'end'} justifyContent={'center'}>
-                    <VectorStarLine width={'6rem'} height={'auto'}/>
+                    <VectorStarLine width={'6rem'} height={'100%'}/>
                     <Typography variant="body1" color="text.secondary">
                         La fundación Heinsonh es una organización privada sin ánimo de lucro
                         creada para contribuir y aportar ayudas y soluciones para la

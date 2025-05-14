@@ -23,12 +23,12 @@ const ProgramDetail: React.FC<ProgramDetailProps> = ({ program }) => {
             <Box sx={{ display: 'flex', flexDirection: 'column', pt: '1.5rem', gap:'1.5rem'}}>
 
                 {program.description.map((item, index) => (
-                    <Box display={'flex'} justifyContent={'flex-start'} alignItems={'center'} gap={1}>
+                    <Box key={index} display={'flex'} justifyContent={'flex-start'} alignItems={'center'} gap={1}>
                         <Box sx={{ width: '20px', height: '20px' }}>
                             <StarLine height={'20px'} width={'20px'} />
                         </Box>
 
-                        <Typography key={index} variant="body1" sx={{ mb: 1 }}>
+                        <Typography variant="body1" sx={{ mb: 1 }}>
                             {item}
                         </Typography>
                     </Box>

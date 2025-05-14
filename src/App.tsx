@@ -2,7 +2,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./components/home";
 import Fundacion from "./components/fundacion";
 import Estudiar from "./components/estudiar";
-import SoyEmpresa from "./components/empresa/SoyEmpresa";
+import Empresa from "./components/empresa";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Route path="/estudiar" element={<Estudiar />} />
       <Route path="/como-ayudar" element={<Navigate to="/" />} />
       <Route path="/galeria" element={<Navigate to="/" />} />
-      <Route path="/empresa" element={<SoyEmpresa />} />
+      <Route path="/empresa" element={<Empresa />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );

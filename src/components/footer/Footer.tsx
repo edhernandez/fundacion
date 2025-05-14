@@ -18,7 +18,7 @@ const Footer = () => {
                 <Box display={'flex'} flexDirection={'column'} gap={'1rem'} justifyContent={'center'} alignItems={'flex-start'}>
                     <Typography variant="h2" fontWeight={600} color="white">Contáctanos</Typography>
                     <Typography variant="h5" fontWeight={300} color="white">601 917 21 72 - Colombia</Typography>
-                    <Typography variant="h5" fontWeight={300} color="white">hensen@heinsonh.com.co</Typography>
+                    <Typography variant="h5" fontWeight={300} color="white">fundacionconecta@heinsohn.com.co </Typography>
                     <Typography variant="h5" fontWeight={300} color="white">
                         Carrera 13 # 82 - 49 Piso 6, Edificio Plaza Prestige, Bogotá - Colombia
                     </Typography>

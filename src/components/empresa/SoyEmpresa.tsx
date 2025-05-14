@@ -218,7 +218,7 @@ const SoyEmpresa = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48"><rect width="48" height="48" rx="24" fill="#F8F9FA"/><path d="M12 18.5V30a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V18.5l-12 7.5-12-7.5Z" stroke="#d3003f" strokeWidth="2"/><path d="M36 16a2 2 0 0 0-2-2H14a2 2 0 0 0-2 2v.5l12 7.5 12-7.5V16Z" stroke="#d3003f" strokeWidth="2"/></svg>
                 </Box>
                 <Typography variant="body1" fontWeight={500} sx={{ mb: 0.5 }}>Escríbenos a</Typography>
-                <Typography variant="body1" fontWeight={700} sx={{ wordBreak: 'break-all' }}>fundacionheinsohn@heinsohn.com.co</Typography>
+                <Typography variant="body1" fontWeight={700} sx={{ wordBreak: 'break-all' }}>fundacionconecta@heinsohn.com.co</Typography>
               </Paper>
             </Grid>
             <Grid gridColumn={{ xs: 'span 12', md: 5 }}>

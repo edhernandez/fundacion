@@ -36,12 +36,24 @@ const theme = createTheme({
         },
     },
     typography: {
-        fontFamily: "'Outfit', sans-serif",
+        fontFamily: "'Fraunces', serif",
         fontWeightLight: 300,
         fontSize: 16,
-        h1: { fontSize: "60px", fontWeight: 600, lineHeight: "54px", letterSpacing: "0%", textAlign: "center" },
-        h2: { fontSize: "1.75rem", fontWeight: 600 },
-        h3: { fontSize: "1.5rem", fontWeight: 500 },
+        h1: { 
+            fontSize: "60px", 
+            fontWeight: 600, 
+            lineHeight: "54px", 
+            letterSpacing: "0%", 
+            textAlign: "center"
+        },
+        h2: { 
+            fontSize: "1.75rem", 
+            fontWeight: 600
+        },
+        h3: { 
+            fontSize: "1.5rem", 
+            fontWeight: 500
+        },
         h5: { fontSize: "1.25 rem", fontWeight: 300 },
         h6: { fontSize: "1 rem", fontWeight: 300 },
         body1: {
@@ -93,7 +105,6 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     color: "#030417", // Texto negro por defecto
-
                 },
             },
         },

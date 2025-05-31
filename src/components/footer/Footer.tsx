@@ -1,12 +1,35 @@
-import { Box, Typography, TextField, IconButton, Grid } from "@mui/material";
+import { Box, Typography, IconButton, Grid } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TikTokIcon from "@mui/icons-material/MusicNote"; // No hay icono oficial en MUI
 import Vector from "@/assets/icons/VectorW.svg?react";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Footer = () => {
+    const form = useRef<HTMLFormElement>(null);
+    const [email, setEmail] = useState("");
+    const [success, setSuccess] = useState(false);
+
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        if (!form.current) return;
+        emailjs.sendForm(
+            'service_ifmtj2x',      // Reemplaza con tu Service ID de EmailJS
+            'template_7agu79a',     // Reemplaza con tu Template ID de EmailJS
+            form.current,
+            'moFSb_jf9Oh8KOrKi'       // Reemplaza con tu Public Key de EmailJS
+        )
+        .then((result) => {
+            setSuccess(true);
+            setEmail("");
+        }, (error) => {
+            alert("Error al enviar el correo");
+        });
+    };
+
     return (
-        <Box sx={{ backgroundColor: "#0A0A0A", color: "white", padding: '56px 80px 56px 80px' }}>
+        <Box sx={{ backgroundColor: "#0A0A0A", color: "white", padding: { xs: '32px 8px', md: '56px 80px' } }}>
             <Box sx={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap" }}>
                 {/* Logo e información */}
                 <Box display={'flex'} flexDirection={'column'} gap={'1rem'} justifyContent={'center'} alignItems={'center'}>
@@ -22,14 +45,18 @@ const Footer = () => {
                     <Typography variant="h5" fontWeight={300} color="white">
                         Carrera 13 # 82 - 49 Piso 6, Edificio Plaza Prestige, Bogotá - Colombia
                     </Typography>
-                    {/* Campo de suscripción */}
-                    <Box sx={{ display: "flex", alignItems: "center", background: "white", borderRadius: 50, px: 2, width: '100%', }}>
-                        <TextField
+                    {/* Campo de suscripción funcional con EmailJS */}
+                    <form ref={form} onSubmit={sendEmail} style={{ width: "100%", display: 'flex', alignItems: 'center', background: 'white', borderRadius: 50, padding: '0 16px' }}>
+                        <input
+                            type="email"
+                            name="user_email"
                             placeholder="¡Déjanos tu correo, te contactaremos!"
-                            variant="standard"
-                            sx={{ flex: 1 }}
+                            value={email}
+                            onChange={e => setEmail(e.target.value)}
+                            required
+                            style={{ flex: 1, border: "none", outline: "none", fontSize: 16, background: 'transparent', padding: '12px 0' }}
                         />
-                        <IconButton color="secondary">
+                        <IconButton color="secondary" type="submit">
                             <Box
                                 sx={{
                                     backgroundColor: "secondary.main",
@@ -44,7 +71,8 @@ const Footer = () => {
                                 <Vector width={20} height={20} fill="none" />
                             </Box>
                         </IconButton>
-                    </Box>
+                        {success && <span style={{ color: "#2ecc40", marginLeft: 8 }}>¡Correo enviado!</span>}
+                    </form>
                 </Box>
 
                 {/* Redes sociales */}

@@ -1,4 +1,4 @@
-import { Grid, Stack } from "@mui/material";
+import { Grid, Stack, Box } from "@mui/material";
 import CardCourse from "./cardCourse";
 
 const courses = [
@@ -9,13 +9,13 @@ const courses = [
         logoImage: "/Logo Cencabo.png"
     },
     {
-        title: "Técnico laboral en auxiliar de sistemas informáticos",
+        title: "Técnico Laboral en Auxiliar Administrativo",
         totalHorasEspecificas: 456,
         totalHorasprograma: 912,
         logoImage: "/Logo Cencabo.png"
     },
     {
-        title: "Técnico laboral en auxiliar de sistemas informáticos",
+        title: "Técnico Laboral Auxiliar Contable y Financiero",
         totalHorasEspecificas: 456,
         totalHorasprograma: 912,
         logoImage: "/Logo Cencabo.png"
@@ -33,7 +33,7 @@ const courses = [
         logoImage: "/logo-i3-inflexion.png"
     },
     {
-        title: "Técnico laboral en auxiliar de sistemas informáticos",
+        title: "Técnico Laboral en Auxiliar Contable y Financiero",
         totalHorasEspecificas: 456,
         totalHorasprograma: 912,
         logoImage: "/logo-i3-inflexion.png"
@@ -43,15 +43,17 @@ const courses = [
 const CourseSection = () => {
     return (
         <Stack alignItems={'center'} width={'100%'} justifyContent={'center'} mt={4} mb={6}>
-            <Grid container spacing={4} justifyContent="center" textAlign="center" sx={{ maxWidth: 1100, mx: 'auto' }}>
+            <Grid container spacing={4} justifyContent="center" textAlign="center" sx={{ maxWidth: { xs: '100%', md: 1100 }, mx: 'auto', px: { xs: 3, md: 0 } }}>
                 {courses.map((course, i) => (
-                    <Grid size={{ xs: 12, md: 4 }} key={i}>
-                        <CardCourse
-                            title={course.title}
-                            totalHorasEspecificas={course.totalHorasEspecificas}
-                            totalHorasprograma={course.totalHorasprograma}
-                            logoImage={course.logoImage}
-                        />
+                    <Grid item xs={12} md={4} key={i} sx={{ display: 'flex', justifyContent: 'center' }}>
+                        <Box sx={{ width: { xs: '100%', md: 'auto' }, maxWidth: { xs: 340, md: 'none' } }}>
+                            <CardCourse
+                                title={course.title}
+                                totalHorasEspecificas={course.totalHorasEspecificas}
+                                totalHorasprograma={course.totalHorasprograma}
+                                logoImage={course.logoImage}
+                            />
+                        </Box>
                     </Grid>
                 ))}
             </Grid>

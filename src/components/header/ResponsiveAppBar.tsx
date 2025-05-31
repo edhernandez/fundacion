@@ -70,44 +70,6 @@ function ResponsiveAppBar() {
           })}
         </Box>
 
-        {/* Botón de dona aqui */}
-        <Box sx={{ flexGrow: 0, display: "flex", alignItems: "center" }}>
-          <Box sx={{ backgroundColor: "white", borderRadius: "50px", display: "flex", alignItems: "center" }}>
-            <Button
-              variant="contained"
-              onClick={() => navigate("/participar-empresa")}
-              endIcon={
-                <Box
-                  sx={{
-                    backgroundColor: "white",
-                    borderRadius: "50%",
-                    width: 36,
-                    height: 36,
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <VectorDolar width={20} height={20} fill="none" stroke={theme.palette.secondary.main} />
-                </Box>
-              }
-              sx={{
-                fontWeight: "bold",
-                backgroundColor: theme.palette.secondary.main,
-                color: "white",
-                borderRadius: "50px",
-                borderColor: theme.palette.secondary.main,
-                fontSize: "1rem",
-                display: "flex",
-                alignItems: "center",
-                "&:hover": { backgroundColor: theme.palette.secondary.dark },
-              }}
-            >
-              ¡Dona aquí!
-            </Button>
-          </Box>
-        </Box>
-
         {/* Menú hamburguesa para pantallas pequeñas */}
         <Box sx={{ display: { xs: "flex", md: "none" } }}>
           <IconButton size="large" color="inherit" onClick={handleOpenNavMenu}>

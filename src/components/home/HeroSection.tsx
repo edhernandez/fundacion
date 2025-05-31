@@ -10,14 +10,19 @@ const HeroSection = () => {
   return (
     <Box sx={{
       width: "100%",
-      height: mobileBreakpoint ? "920px" : "720px",
-      backgroundColor: '#000000'
+      height: { xs: '500px', md: '620px' },
+      backgroundColor: '#000000',
+      position: 'relative',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
     }}>
       <Box
         sx={{
           position: "absolute",
           width: "100%",
-          height: "620px",
+          height: { xs: '500px', md: '620px' },
           backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0) 80% , rgba(0, 0, 0, 1) 100%), url('/fundacion.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "bottom",
@@ -28,20 +33,19 @@ const HeroSection = () => {
           textAlign: "center",
           color: "white",
           px: 2,
-          pb: 6
+          pb: 6,
+          zIndex: 0,
         }}
       >
-
-
       </Box>
       <Box sx={{
         display: 'flex',
         flexDirection: 'column',
-        position: 'absolute',
         width: '100%',
         justifyContent: 'center',
         alignItems: 'center',
-        top: '400px'
+        zIndex: 1,
+        mt: { xs: '90px', md: '200px', lg: 0 },
       }}>
         <Typography 
           variant="h1" 
@@ -124,8 +128,8 @@ const HeroSection = () => {
             Quiero ser asociado Heinsohn
           </Button>
         </Box>
-        <Box sx={{ width: '18px', height: '34.5px', py: '1rem' }}>
-          <Mouse height={'34.5px'} width={'18px'} />
+        <Box sx={{ width: '40px', height: '60px', mt: 4, display: { xs: 'none', md: 'flex' }, justifyContent: 'center', alignItems: 'center' }}>
+          <Mouse height={'40px'} width={'40px'} />
         </Box>
       </Box>
     </Box>

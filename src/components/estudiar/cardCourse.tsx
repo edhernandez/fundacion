@@ -31,19 +31,19 @@ const CardCourse: React.FC<Props> = ({title, totalHorasEspecificas, totalHoraspr
                     </Typography>
                     <Box display={'flex'} flexDirection={'column'} gap={'0.25rem'} alignItems="flex-start" width="100%">
                         <Box display={'flex'} alignItems={'center'} gap={1}>
-                            <Typography fontSize={15} color="#222">Fase Lectiva</Typography>
+                            <Typography fontSize={15} color="#222" sx={{ fontFamily: "'Outfit', sans-serif" }}>Fase Lectiva</Typography>
                             <VectorCheckR />
                         </Box>
                         <Box display={'flex'} alignItems={'center'} gap={1}>
-                            <Typography fontSize={15} color="#222">Fase Práctica</Typography>
+                            <Typography fontSize={15} color="#222" sx={{ fontFamily: "'Outfit', sans-serif" }}>Fase Práctica</Typography>
                             <VectorCheckR />
                         </Box>
                         <Box display={'flex'} justifyContent={'space-between'} alignItems={'center'} width="100%">
-                            <Typography fontSize={15} color="#222">Total Horas Específicas</Typography>
+                            <Typography fontSize={15} color="#222" sx={{ fontFamily: "'Outfit', sans-serif" }}>Total Horas Específicas</Typography>
                             <Typography fontWeight={700} color="#222">{totalHorasEspecificas}</Typography>
                         </Box>
                         <Box display={'flex'} justifyContent={'space-between'} alignItems={'center'} width="100%">
-                            <Typography fontSize={15} color="#222">Total Horas Programa</Typography>
+                            <Typography fontSize={15} color="#222" sx={{ fontFamily: "'Outfit', sans-serif" }}>Total Horas Programa</Typography>
                             <Typography fontWeight={700} color="#222">{totalHorasprograma}</Typography>
                         </Box>
                     </Box>

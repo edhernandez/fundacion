@@ -7,55 +7,54 @@ const HeroSection = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: { xs: 'column', md: 'row' },
-        width: '100%',
-        height: { md: 620 },
-        minHeight: { xs: 'auto', md: 620 },
-        background: '#000',
-      }}
-    >
-      {/* Columna de la imagen */}
+    <Box sx={{
+      width: "100%",
+      minHeight: { xs: '500px', md: '720px' },
+      height: { md: '720px' },
+      backgroundColor: '#000000',
+      position: 'relative',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      overflow: 'hidden',
+    }}>
       <Box
         sx={{
-          flex: 1,
-          backgroundImage: "url('/fundacion.jpg')",
+          position: "absolute",
+          width: "100%",
+          height: { xs: '100%', md: '100%' },
+          backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 1) 100%), url('/fundacion.png')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          minHeight: { xs: 200, md: '100%' },
+          backgroundRepeat: 'no-repeat',
+          zIndex: 0,
         }}
       />
-      {/* Columna del texto */}
-      <Box
-        sx={{
-          flex: 1,
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'flex-start',
-          background: 'rgba(255,255,255,0.95)',
-          p: { xs: 3, md: 8 },
-          minHeight: { xs: 'auto', md: '100%' },
-          zIndex: 1,
-        }}
-      >
-        <Typography
-          variant="h1"
-          fontWeight="bold"
-          maxWidth="600px"
-          sx={{
-            color: '#d3003f',
-            fontSize: isMobile ? '38px' : '60px',
-            lineHeight: isMobile ? '1.2' : '1.1',
+      <Box sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        width: '100%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        zIndex: 1,
+        mt: { xs: '90px', md: '330px' },
+      }}>
+        <Typography 
+          variant="h1" 
+          fontWeight="bold" 
+          maxWidth="600px" 
+          sx={{ 
+            color: "white", 
+            fontSize: isMobile ? "38px" : "60px",
+            lineHeight: isMobile ? "1.2" : "1.1",
             paddingX: isMobile ? 2 : 0,
-            marginBottom: 2,
+            marginBottom: 2
           }}
         >
           En Fundación Heinsohn Conecta
         </Typography>
-        <Typography variant="body1" maxWidth="720px" p={'1rem'} sx={{ color: '#222', fontSize: '18px' }}>
+        <Typography variant="body1" maxWidth="720px" p={'1rem'} sx={{ color: "white", fontSize: '18px', fontFamily: "'Outfit', sans-serif" }}>
           Creemos en el poder del aprendizaje y la tecnología para cambiar el mundo. Nuestra misión es brindar educación, herramientas digitales y apoyo social a comunidades en situación de vulnerabilidad, creando oportunidades para un mejor futuro.
         </Typography>
         <Box display={'flex'} gap={'1rem'} flexWrap={mobileBreakpoint ? 'wrap' : 'nowrap'} justifyContent="center">
@@ -76,6 +75,7 @@ const HeroSection = () => {
               gap: '8px',
               maxWidth: '180px',
               textDecoration: 'none',
+              textAlign: 'center',
             }}
           >
             Quiero ser parte del programa
@@ -97,6 +97,7 @@ const HeroSection = () => {
               gap: '8px',
               maxWidth: '180px',
               textDecoration: 'none',
+              textAlign: 'center',
             }}
           >
             Quiero participar como empresa
@@ -117,6 +118,7 @@ const HeroSection = () => {
               gap: '8px',
               maxWidth: '180px',
               textDecoration: 'none',
+              textAlign: 'center',
             }}
           >
             Quiero ser asociado Heinsohn

@@ -44,13 +44,13 @@ const VolunteersWorkTeam = () => {
               <AccordionDetails>
                 <Box display="flex" alignItems="flex-start" gap={1} mb={1}>
                   <VectorStar width={18} height={18} style={{ marginTop: 4 }} />
-                  <Typography>
+                  <Typography sx={{ fontFamily: "'Outfit', sans-serif" }}>
                     Todos los recursos económicos obtenidos a través de donaciones de personas, empresas o programas de apoyo serán destinados a los programas de formación, captación y empleabilidad de los jóvenes, como también a los destinados para comunidades.
                   </Typography>
                 </Box>
                 <Box display="flex" alignItems="flex-start" gap={1}>
                   <VectorStar width={18} height={18} style={{ marginTop: 4 }} />
-                  <Typography>
+                  <Typography sx={{ fontFamily: "'Outfit', sans-serif" }}>
                     La fundación limitará a un <b>porcentaje mínimo</b> sus fondos para fines administrativos, operativos o de remuneración de personal.
                   </Typography>
                 </Box>
@@ -70,13 +70,13 @@ const VolunteersWorkTeam = () => {
               <AccordionDetails>
                 <Box display="flex" alignItems="flex-start" gap={1} mb={1}>
                   <VectorStar width={18} height={18} style={{ marginTop: 4 }} />
-                  <Typography>
+                  <Typography sx={{ fontFamily: "'Outfit', sans-serif" }}>
                     Publicaremos periódicamente informes de gestión y rendición de cuentas, asegurando que los donantes y aliados conozcan el impacto de su apoyo.
                   </Typography>
                 </Box>
                 <Box display="flex" alignItems="flex-start" gap={1}>
                   <VectorStar width={18} height={18} style={{ marginTop: 4 }} />
-                  <Typography>
+                  <Typography sx={{ fontFamily: "'Outfit', sans-serif" }}>
                     Se implementarán auditorías y controles internos para garantizar el uso adecuado de los recursos y evitar cualquier irregularidad.
                   </Typography>
                 </Box>
@@ -96,13 +96,13 @@ const VolunteersWorkTeam = () => {
               <AccordionDetails>
                 <Box display="flex" alignItems="flex-start" gap={1} mb={1}>
                   <VectorStar width={18} height={18} style={{ marginTop: 4 }} />
-                  <Typography>
+                  <Typography sx={{ fontFamily: "'Outfit', sans-serif" }}>
                     Trabajamos para garantizar que todos los jóvenes, sin distinción de género, raza, religión o condición socioeconómica, tengan acceso a oportunidades de formación y empleo.
                   </Typography>
                 </Box>
                 <Box display="flex" alignItems="flex-start" gap={1}>
                   <VectorStar width={18} height={18} style={{ marginTop: 4 }} />
-                  <Typography>
+                  <Typography sx={{ fontFamily: "'Outfit', sans-serif" }}>
                     Promovemos la equidad y el respeto en todas nuestras interacciones, asegurando un ambiente libre de discriminación y corrupción.
                   </Typography>
                 </Box>
@@ -122,13 +122,13 @@ const VolunteersWorkTeam = () => {
               <AccordionDetails>
                 <Box display="flex" alignItems="flex-start" gap={1} mb={1}>
                   <VectorStar width={18} height={18} style={{ marginTop: 4 }} />
-                  <Typography>
+                  <Typography sx={{ fontFamily: "'Outfit', sans-serif" }}>
                     Nos comprometemos a mejorar constantemente nuestros programas y procesos para garantizar un mayor impacto en la vida de los beneficiarios.
                   </Typography>
                 </Box>
                 <Box display="flex" alignItems="flex-start" gap={1}>
                   <VectorStar width={18} height={18} style={{ marginTop: 4 }} />
-                  <Typography>
+                  <Typography sx={{ fontFamily: "'Outfit', sans-serif" }}>
                     Escuchamos activamente a la comunidad, a los voluntarios y a los aliados estratégicos para adaptar y fortalecer nuestras iniciativas.
                   </Typography>
                 </Box>
@@ -148,19 +148,19 @@ const VolunteersWorkTeam = () => {
               <AccordionDetails>
                 <Box display="flex" alignItems="flex-start" gap={1} mb={1}>
                   <VectorStar width={18} height={18} style={{ marginTop: 4 }} />
-                  <Typography>
+                  <Typography sx={{ fontFamily: "'Outfit', sans-serif" }}>
                     Ningún miembro de la fundación podrá obtener beneficios personales derivados de su relación con la organización.
                   </Typography>
                 </Box>
                 <Box display="flex" alignItems="flex-start" gap={1} mb={1}>
                   <VectorStar width={18} height={18} style={{ marginTop: 4 }} />
-                  <Typography>
+                  <Typography sx={{ fontFamily: "'Outfit', sans-serif" }}>
                     Se evitarán prácticas que comprometan la imparcialidad en la selección de beneficiarios y aliados estratégicos.
                   </Typography>
                 </Box>
                 <Box display="flex" alignItems="flex-start" gap={1}>
                   <VectorStar width={18} height={18} style={{ marginTop: 4 }} />
-                  <Typography>
+                  <Typography sx={{ fontFamily: "'Outfit', sans-serif" }}>
                     Toda relación con empresas y donantes será gestionada con absoluta ética, evitando cualquier acto que pueda interpretarse como un conflicto de intereses.
                   </Typography>
                 </Box>
@@ -180,7 +180,7 @@ const VolunteersWorkTeam = () => {
               <AccordionDetails>
                 <Box display="flex" alignItems="flex-start" gap={1}>
                   <VectorStar width={18} height={18} style={{ marginTop: 4 }} />
-                  <Typography>
+                  <Typography sx={{ fontFamily: "'Outfit', sans-serif" }}>
                     Todos los miembros, voluntarios y aliados de la Fundación Heinsohn Conecta se comprometen a respetar este Código de Ética y a trabajar con integridad y compromiso por el bienestar común.
                   </Typography>
                 </Box>

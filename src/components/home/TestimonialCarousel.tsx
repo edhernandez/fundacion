@@ -136,7 +136,7 @@ const TestimonialCarousel: React.FC = () => {
                                 ))}
                             </Box>
                             <Divider sx={{py: 1}}/>
-                            <Typography variant="body2" mt={1} textAlign='justify'>
+                            <Typography variant="body2" mt={1} textAlign='justify' sx={{ fontFamily: "'Outfit', sans-serif" }}>
                                 {testimonial.text}
                             </Typography>
                             <Typography variant="subtitle2" fontWeight="bold" mt={2}>

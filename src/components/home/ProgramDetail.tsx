@@ -28,7 +28,7 @@ const ProgramDetail: React.FC<ProgramDetailProps> = ({ program }) => {
                             <StarLine height={'20px'} width={'20px'} />
                         </Box>
 
-                        <Typography variant="body1" sx={{ mb: 1 }}>
+                        <Typography variant="body1" sx={{ mb: 1, fontFamily: "'Outfit', sans-serif" }}>
                             {item}
                         </Typography>
                     </Box>

@@ -60,7 +60,7 @@ const MissionVisionPrinciples = () => {
                                         Misión
                                     </Typography>
                                 </Box>
-                                <Typography variant="body2" color="text.secondary" mt={1}>
+                                <Typography variant="body2" color="text.secondary" mt={1} sx={{ fontFamily: "'Outfit', sans-serif" }}>
                                     Fomentar educación de calidad para jóvenes, impulsando la tecnología,
                                     la pasión y la innovación como pilares fundamentales de la formación
                                     técnica, desarrollada a través de nuestros aliados, proporcionando a
@@ -86,7 +86,7 @@ const MissionVisionPrinciples = () => {
                                         Visión
                                     </Typography>
                                 </Box>
-                                <Typography variant="body2" color="text.secondary" mt={1}>
+                                <Typography variant="body2" color="text.secondary" mt={1} sx={{ fontFamily: "'Outfit', sans-serif" }}>
                                     Para el año 2030 ser reconocidos en Colombia por transformar vidas de
                                     jóvenes mediante el desarrollo de programas educativos de calidad y
                                     la articulación constante con empresas, fomentando la equidad y el
@@ -115,7 +115,7 @@ const MissionVisionPrinciples = () => {
                                 Principios Fundamentales
                             </Typography>
                         </Box>
-                        <Typography variant="body2" fontWeight="bold" mt={1}>
+                        <Typography variant="body2" fontWeight="bold" mt={1} sx={{ fontFamily: "'Outfit', sans-serif" }}>
                             La Fundación Heinsonh se rige por los siguientes valores esenciales:
                         </Typography>
                         <Box mt={2}>
@@ -127,7 +127,7 @@ const MissionVisionPrinciples = () => {
                                             {title}
                                         </Typography>
                                     </Box>
-                                    <Typography variant="body2" color="text.secondary" ml={'1.8rem'}>
+                                    <Typography variant="body2" color="text.secondary" ml={'1.8rem'} sx={{ fontFamily: "'Outfit', sans-serif" }}>
                                         {description}
                                     </Typography>
                                 </Box>

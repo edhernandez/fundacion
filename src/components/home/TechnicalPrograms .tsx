@@ -4,7 +4,6 @@ import ProgramDetail from "./ProgramDetail";
 import SchoolIcon from "@mui/icons-material/School";
 import CalculateIcon from "@mui/icons-material/Calculate";
 import ComputerIcon from "@mui/icons-material/Computer";
-import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 
 const programs = [
     {
@@ -31,11 +30,6 @@ const programs = [
             "Seguridad informática y redes."
         ],
         icon: <ComputerIcon color="secondary" />,
-    },
-    {
-        title: "Otros Programas en Alianza con el Instituto i3",
-        description: ["Consulta nuestros programas en conjunto con el Instituto i3."],
-        icon: <AddCircleOutlineIcon color="secondary" />,
     },
 ];
 

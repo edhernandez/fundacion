@@ -34,7 +34,7 @@ const AboutUsSection = () => {
                 </Typography>
                 <Box display={'flex'} flexDirection={"row"} alignItems={'end'} justifyContent={'center'}>
                     <VectorStarLine width={'6rem'} height={'100%'}/>
-                    <Typography variant="body1" color="text.secondary">
+                    <Typography variant="body1" color="text.secondary" sx={{ fontFamily: "'Outfit', sans-serif" }}>
                         La fundación Heinsonh es una organización privada sin ánimo de lucro
                         creada para contribuir y aportar ayudas y soluciones para la
                         comunidad en los ámbitos sociales, educativos y desarrollo para la
